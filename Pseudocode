@@ -1,0 +1,94 @@
+// Vector pseudocode
+int numPrerequisiteCourses(Vector<Course> courses, Course c) {
+    Set<Course> totalPrerequisites = c.prerequisites;  // Assuming Course class has a 'prerequisites' field
+    for each prerequisite p in totalPrerequisites
+        add prerequisites of p to totalPrerequisites
+    print number of totalPrerequisites
+}
+void printSampleSchedule(Vector<Course> courses) {
+    // Implementation for printing sample schedule in Vector
+}
+void printCourseInformation(Vector<Course> courses, String courseNumber) {
+    for each Course course in courses
+        if the course number is the same as courseNumber
+            print out the course information
+            for each prerequisite of the course
+                print the prerequisite course information
+}
+//Vector pseudocode alphanumeric order
+function printAlphanumericallyOrderedCourseList(Vector<Course> courses):
+    sort courses by alphanumeric course number from lowest to highest
+    for each Course course in courses
+        print course information
+// Hashtable pseudocode
+int numPrerequisiteCourses(Hashtable<Course> courses, Course c) {
+    Set<Course> totalPrerequisites = c.prerequisites;  // Assuming Course class has a 'prerequisites' field
+    for each prerequisite p in totalPrerequisites
+        add prerequisites of p to totalPrerequisites
+    print number of totalPrerequisites
+}
+void printSampleSchedule(Hashtable<Course> courses) {
+    // Implementation for printing sample schedule in Hashtable
+}
+void printCourseInformation(Hashtable<Course> courses, String courseNumber) {
+    // Implementation for printing course information in Hashtable
+}
+// Hashtable pseudocode alphanumeric order
+function printAlphanumericallyOrderedCourseList(Hashtable<Course> courses):
+    // Extract all courses from the hashtable and store in a list
+    List<Course> courseList = extractCoursesFromHashtable(courses)
+    
+    // Sort the courseList by alphanumeric course number from lowest to highest
+    sort courseList by alphanumeric course number from lowest to highest
+    // Print the sorted list
+    for each Course course in courseList
+        print course information
+// Tree Implementation
+int numPrerequisiteCourses(Tree<Course> courses, Course c) {
+    // Implementation for calculating number of prerequisite courses in Tree
+}
+void printSampleSchedule(Tree<Course> courses) {
+    // Implementation for printing sample schedule in Tree
+}
+void printCourseInformation(Tree<Course> courses, String courseNumber) {
+    // Implementation for printing course information in Tree
+}
+// Tree Implementation alphanumeric order
+function printAlphanumericallyOrderedCourseList(Tree<Course> courses):
+    // Perform an in-order traversal to get courses in alphanumeric order
+    List<Course> courseList = inOrderTraversal(courses.root)
+    // Print the sorted list
+    for each Course course in courseList
+        print course information
+//Menu Pseudocode 
+Initialize empty data structure (e.g., Vector, Hashtable, or Tree)
+function loadFileIntoDataStructure(filename):
+    // Implementation to read data from the file and load it into the data structure
+function printAlphanumericallyOrderedCourseList():
+    // Implementation to print an alphanumerically ordered list of all courses in the Computer Science department
+function printCourseInformation(courseNumber):
+    // Implementation to print the course title and prerequisites for the specified course
+function mainMenu():
+    while true:
+        print("Menu:")
+        print("1. Load Data Structure")
+        print("2. Print Course List")
+        print("3. Print Course")
+        print("4. Exit")
+        choice = input("Enter your choice: ")
+        if choice == "1":
+            filename = input("Enter the filename to load data from: ")
+            loadFileIntoDataStructure(filename)
+            print("Data loaded into the data structure.")
+        elif choice == "2":
+            printAlphanumericallyOrderedCourseList()
+        elif choice == "3":
+            courseNumber = input("Enter the course number: ")
+            printCourseInformation(courseNumber)
+        elif choice == "4":
+            print("Exiting the program.")
+            break
+        else:
+            print("Invalid choice. Please enter a valid option.")
+// Call the main menu to start the program
+mainMenu()
