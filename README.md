@@ -1,4 +1,4 @@
-![image](https://github.com/MAWalston/CS300/assets/148407345/20b7c248-66d9-4ca0-85ec-abdca1dbbe78)# CS300
+
 
 What was the problem you were solving in the projects for this course?
 For project one I wrote pseudocode to print a list of all the Computer Science courses in alphanumeric order and print out its title and prerequisites.
